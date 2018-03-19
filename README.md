@@ -8,5 +8,5 @@ You need to be logged in to https://getpocket.com for this extension to work.
 
 ## TODO
 
-* Detect if you're removing an item from the reading list
+* Detect if you're removing or adding an item from the reading list
 * Add a button in the actual reading list https://dev.to/readinglist
