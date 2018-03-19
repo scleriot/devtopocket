@@ -1,0 +1,30 @@
+{
+    "manifest_version": 2,
+    "name": "DevToPocket",
+    "version": "1.0.0",
+    "gecko": {
+        "id": "devtopocket@cleriotsimon.com"
+    },
+
+    "description": "Send your DEV.to reading list to Pocket",
+
+    "icons": {
+        "48": "icons/devtopocket-48.png"
+    },
+
+    "content_scripts": [
+        {
+            "matches": ["*://dev.to/*"],
+            "js": ["borderify.js", "devtopocket.js"]
+        }
+    ],
+
+    "options_ui": {
+        "page": "options.html"
+    },
+          
+    "permissions": [
+        "storage",
+        "https://getpocket.com/"
+    ]
+}
