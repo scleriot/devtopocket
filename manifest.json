@@ -15,7 +15,7 @@
     "content_scripts": [
         {
             "matches": ["*://dev.to/*"],
-            "js": ["borderify.js", "devtopocket.js"]
+            "js": ["devtopocket.js"]
         }
     ],
 
