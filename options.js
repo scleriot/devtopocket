@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function(){
-    var getting = browser.storage.local.get("ask_confirmation");
-    getting.then(function(result){
+    browser.storage.local.get({ask_confirmation: true})
+    .then(function(result){
         document.getElementById("checkbox_confirmation").checked = result.ask_confirmation;
     }, function(error) {
         console.log(`Error: ${error}`);

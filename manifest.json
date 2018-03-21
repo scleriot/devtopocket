@@ -14,10 +14,13 @@
 
     "content_scripts": [
         {
-            "matches": ["*://dev.to/*"],
+            "matches": ["*://dev.to/*/*"],
             "js": ["devtopocket.js"]
         }
     ],
+    "background": {
+        "scripts": ["background.js"]
+    },
 
     "options_ui": {
         "page": "options.html"
@@ -25,6 +28,10 @@
           
     "permissions": [
         "storage",
-        "https://getpocket.com/"
+        "cookies",
+        "webNavigation",
+        "tabs",
+        "*://dev.to/*/*",
+        "*://getpocket.com/*"
     ]
 }
