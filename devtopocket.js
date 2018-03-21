@@ -6,7 +6,6 @@ function sendBackgroundToPocket(){
         }, 2000)
     });  
 }
-console.log("test");
 document.getElementById("reaction-butt-readinglist").addEventListener("click", function() {
     browser.storage.local.get({ask_confirmation: true})
     .then(function(result) {
