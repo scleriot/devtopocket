@@ -2,8 +2,10 @@
     "manifest_version": 2,
     "name": "DevToPocket",
     "version": "1.0.0",
-    "gecko": {
-        "id": "devtopocket@cleriotsimon.com"
+    "applications": {
+        "gecko": {
+            "id": "devtopocket@cleriotsimon.com"
+        }
     },
 
     "description": "Send your DEV.to reading list to Pocket",

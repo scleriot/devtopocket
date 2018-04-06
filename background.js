@@ -19,4 +19,6 @@ function handleMessage(message, sender, sendResponse) {
 
 browser.webNavigation.onHistoryStateUpdated.addListener(function(details) {
     browser.tabs.executeScript(null,{file:"devtopocket.js"});
+}, {
+    url: [{originAndPathMatches: "^.+://dev.to/.+/.+$"}]
 });
