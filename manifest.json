@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "DevToPocket",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "applications": {
         "gecko": {
             "id": "devtopocket@cleriotsimon.com"
